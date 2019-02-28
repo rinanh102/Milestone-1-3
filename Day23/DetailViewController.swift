@@ -19,10 +19,8 @@ class DetailViewController: UIViewController {
         if let flagImage = selectedCountries{
             imageView.image = UIImage(named: flagImage)
         }
-        
         imageView.layer.borderColor = UIColor.lightGray.cgColor
         imageView.layer.borderWidth = 1
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
     }
     @objc func shareTapped(){
